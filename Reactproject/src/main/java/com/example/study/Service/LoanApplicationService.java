@@ -18,10 +18,13 @@ import com.example.study.Repository.UserModelRepo;
 @Service
 public class LoanApplicationService {
 @Autowired
-AdminModelrepo ar;
-LoanApplicationModelRepo lar;
-LoginModelRepo lmr;
-UserModelRepo umr;
+public AdminModelrepo ar;
+@Autowired
+public LoanApplicationModelRepo lar;
+@Autowired
+public LoginModelRepo lmr;
+@Autowired
+public UserModelRepo umr;
 public UserModel addUser(UserModel um)
 {
 	return umr.save(um);
